@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FireGrill Café - Payment</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #fff6e6;
+        font-family: Arial;
+    }
+    header {
+        background: #d82e2f;
+        padding: 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+    .form-container {
+        background: white;
+        width: 90%;
+        max-width: 450px;
+        margin: 40px auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #aaa;
+    }
+    input, select, button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #aaa;
+    }
+    button {
+        background: #d82e2f;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        border: none;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>FireGrill Café</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Menu</a>
+    </nav>
+</header>
+
+<div class="form-container">
+    <h2>Payment Details</h2>
+
+    <form action="thankyou.html">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Address" required>
+
+        <select required>
+            <option>Select Payment Method</option>
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+            <option>UPI</option>
+        </select>
+
+        <button type="submit">Complete Payment</button>
+    </form>
+</div>
+
+</body>
+</html>
