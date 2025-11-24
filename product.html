@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FireGrill Café - Menu</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #fff8e8;
+    }
+    header {
+        background: #d82e2f;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h1 { margin: 0; }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 30px;
+    }
+    .card {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+        text-align: center;
+    }
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+        height: 180px;
+        object-fit: cover;
+    }
+    .btn {
+        background: #d82e2f;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>FireGrill Café</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Menu</a>
+        <a href="payment.html">Order</a>
+    </nav>
+</header>
+
+<section class="products">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="">
+        <h3>Classic Beef Burger</h3>
+        <p>₹199</p>
+        <a href="payment.html" class="btn">Order Now</a>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1606756790138-47e219ae2f63" alt="">
+        <h3>FireGrill Special</h3>
+        <p>₹249</p>
+        <a href="payment.html" class="btn">Order Now</a>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1550547660-8b7046f3f298" alt="">
+        <h3>Cheese Lava Burger</h3>
+        <p>₹229</p>
+        <a href="payment.html" class="btn">Order Now</a>
+    </div>
+
+</section>
+
+</body>
+</html>
